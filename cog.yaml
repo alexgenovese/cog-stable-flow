@@ -1,0 +1,16 @@
+build:
+  python_version: "3.9"
+  # Se non hai bisogno di installare ulteriori dipendenze via setup.py,
+  # specifica direttamente le librerie richieste:
+  python_packages:
+    - torch
+    - torchvision
+    - diffusers
+    - transformers
+    - numpy
+    - Pillow
+    - einops
+    - omegaconf
+    - accelerate
+    - huggingface_hub
+predict: "predict.py:Predictor"
